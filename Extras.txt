@@ -1,0 +1,31 @@
+  //const setText = (text) => {
+  //   ReactDOM.render(
+  //     <React.Fragment>
+  //       <h1>{text}</h1>
+  //       {["yo", "hello"].map((element) => {
+  //         return <h>{element}</h>;
+  //       })}
+  //     </React.Fragment>,
+  //     document.getElementById("root")
+  //   );
+  // };
+  
+  
+  const numArr = [1, 2, 3];
+
+  const res2 = numArr.forEach((val, i, arr) => {arr[i] = val * 2});
+
+  console.log(numArr);
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  const person = {
+    name: "A",
+    age: 7,
+    printInfo: function () {
+      console.log(`this is ${this.name}`);
+    }
+  };
+
+  person.printInfo()
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  
+  <input value = {text} onChange={handleText}/>
