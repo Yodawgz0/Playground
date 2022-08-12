@@ -3,3 +3,21 @@ Browser Doesnt Understand JSX , a transpiler converts it to what Browser Underst
 constructor is used for loading the variables before the page loads before componentDidMount
 
 COMPONENT DID MOUNT , COMPONENT DID UPDATE RENDER CONSTRUCTOR
+
+Redux
+
+mangaing and updating using actions and , it acts like a centralized store where we can store all of the dat
+
+1. Action -> What to do
+2. Reducer -> contains state and the way to do it
+3. store -> Object which holds the state of the application
+4. Function -> createStore() getState disptach()
+
+Action -> Reducer -> State
+
+In Action we have Type which tell what to do but not what to do
+action is created by a pure function and has this return object inside it
+
+There can only be one store inw application
+
+State is read only and the only way to change is using the dispatch

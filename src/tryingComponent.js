@@ -7,9 +7,6 @@ export default class TryingComponent extends Component {
       count: 0,
     };
   }
-  componentDidMount() {
-    console.log("hello");
-  }
 
   increment() {
     this.setState({ count: this.state.count + 1 });
@@ -24,7 +21,7 @@ export default class TryingComponent extends Component {
             this.increment();
           }}
         >
-          Click me
+          +
         </button>
       </>
     );
