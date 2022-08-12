@@ -10,12 +10,9 @@
   //   );
   // };
   
-  
   const numArr = [1, 2, 3];
 
   const res2 = numArr.forEach((val, i, arr) => {arr[i] = val * 2});
-
-  console.log(numArr);
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   const person = {
     name: "A",
@@ -29,3 +26,28 @@
   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   
   <input value = {text} onChange={handleText}/>
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+export const TryingComponent = () => {
+  const [text, setText] = useState("");
+  const [error, setError] = useState(false);
+
+  const handleText = (e) => {
+    setText(e.target.value);
+  };
+  const ErrMsg = "under 18!";
+
+  useEffect(() => {
+    setError(text < 18);
+  }, [text]);
+
+  return (
+    <>
+      <div>{text}</div>
+      <input value={text} onChange={handleText} />
+      {error ? ErrMsg : null}
+    </>
+  );
+};
+
+

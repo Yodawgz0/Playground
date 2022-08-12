@@ -1,0 +1,5 @@
+Browser Doesnt Understand JSX , a transpiler converts it to what Browser Understands in which Render is Used
+
+constructor is used for loading the variables before the page loads before componentDidMount
+
+COMPONENT DID MOUNT , COMPONENT DID UPDATE RENDER CONSTRUCTOR

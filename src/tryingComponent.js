@@ -1,32 +1,32 @@
-import React, { useEffect, useState } from "react";
+import React, { Component } from "react";
+import Counter from "./components/Counter";
+export default class TryingComponent extends Component {
+  constructor() {
+    super();
+    this.state = {
+      count: 0,
+    };
+  }
+  componentDidMount() {
+    console.log("hello");
+  }
 
-export const TryingComponent = () => {
-  const [text, setText] = useState("");
-  const [error, setError] = useState(false);
+  increment() {
+    this.setState({ count: this.state.count + 1 });
+  }
 
-  const handleText = (e) => {
-    setText(e.target.value);
-  };
-  const ErrMsg = "under 18!";
-
-  useEffect(() => {
-    setError(text < 18);
-  }, [text]);
-
-  console.log(1);
-  setTimeout(function () {
-    console.log(2);
-  }, 1000);
-  setTimeout(function () {
-    console.log(3);
-  }, 1);
-  console.log(4);
-
-  return (
-    <>
-      <div>{text}</div>
-      <input value={text} onChange={handleText} />
-      {error ? ErrMsg : null}
-    </>
-  );
-};
+  render() {
+    return (
+      <>
+        <Counter number={this.state.count}></Counter>
+        <button
+          onClick={() => {
+            this.increment();
+          }}
+        >
+          Click me
+        </button>
+      </>
+    );
+  }
+}
