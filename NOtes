@@ -13,7 +13,8 @@ mangaing and updating using actions and , it acts like a centralized store where
 3. store -> Object which holds the state of the application
 4. Function -> createStore() getState disptach()
 
-Action -> Reducer -> State
+Components -> dispatch -> Action -> Reducer -> updates State to -> Store -> triggers subsciption -> as a prop it passes it to commponent
+NOTE: We never mutate the original state.
 
 In Action we have Type which tell what to do but not what to do
 action is created by a pure function and has this return object inside it
@@ -21,3 +22,63 @@ action is created by a pure function and has this return object inside it
 There can only be one store inw application
 
 State is read only and the only way to change is using the dispatch
+
+JS is single Threaded language .. first in and first out
+
+hoisting meiin compiler karte waqt assignment ho jata hai uske baad run karte waqt usko mil jata hai par agar access kare toh
+undefined ata hai isiliye and same with functions hai and agar functions ko bhi assign kia toh wahi ho jayga
+
+ES6 -> Let const ,arrow , template string , promise
+
+myPromise.state myPromise.result
+"pending" undefined
+"fulfilled" a result value
+"rejected" an error object
+
+virtual dom creates copy of whole DOM
+DOM document object model
+
+relative posisition is relative to its positions and changing its surrounding
+absolute position is relative to its parent position
+
+class component has a state and functional component is stateless
+class is having lifecycle and functional component doesnt have a lifecycle
+
+Design pattern is used to create general repeatable solution , that is there to couter specific problem
+it is done using props and Rendering
+
+so what we do is that logic remains same but we modify the original components in order to cater our needs , usko useable component
+like
+
+HTML5 doctype is where we tell ki kaunsa version hai for html5 we only have html and 4 ke liye bohot bada sa URL and version number bhi hota hai jiss
+browser ko pata chal jata hai ki kaaunsa verison chal rah ah
+
+CSS3 includes \_>>>> rounded corners, box shadows, RGBA, HSL and HSLA colors, box sizing, Opacity, CSS3 Gradients, transitions, transformations, animations, multi-column layout, flex box, CSS grids, embedded fonts and Responsive web design
+
+BOM , kaise browser se interact karte hai > window object
+jaise var declare kia toh ye window object ka property ban jata h (LET and Const nai karta )
+=================================================
+
+Reac-Native
+
+We have view text touchableOpacity in react native
+we use native animation api
+
+in built navitgation
+
+doesnt not HTML
+
+native api render code for api
+
+zero dom
+
+animated .parallel
+animated . decay
+animated . stagger
+
+animated -> controls specific values
+layout animated -> animates the global layout transaction
+
+settimeout setinterval setimmediate
+There is a async storage in react native where we can store key and value of items
+it can be any object array but we have to JSON. stringify
