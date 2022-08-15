@@ -38,6 +38,8 @@ myPromise.state myPromise.result
 virtual dom creates copy of whole DOM
 DOM document object model
 
+const is used for api key and things that are going to be constant throughout
+
 relative posisition is relative to its positions and changing its surrounding
 absolute position is relative to its parent position
 
@@ -56,8 +58,23 @@ browser ko pata chal jata hai ki kaaunsa verison chal rah ah
 CSS3 includes \_>>>> rounded corners, box shadows, RGBA, HSL and HSLA colors, box sizing, Opacity, CSS3 Gradients, transitions, transformations, animations, multi-column layout, flex box, CSS grids, embedded fonts and Responsive web design
 
 BOM , kaise browser se interact karte hai > window object
-jaise var declare kia toh ye window object ka property ban jata h (LET and Const nai karta )
-=================================================
+jaise var declare kia toh ye window object ka property ban jata h (LET and Const nai karta ) par functions alter ye sab BOM ka part hai
+
+em Relative to the font-size of the element (2em means 2 times the size of the current font)
+ex Relative to the x-height of the current font (rarely used)
+ch Relative to the width of the "0" (zero)
+rem Relative to font-size of the root element
+vw Relative to 1% of the width of the viewport*
+vh Relative to 1% of the height of the viewport*
+vmin Relative to 1% of viewport's* smaller dimension
+vmax Relative to 1% of viewport's* larger dimension
+
+Virual DOM ->
+so it is a javascript dom created where it is a copy of the actual dom
+what react dose is to create a snapshot right before it updates the component and it knows which is actually different .. call diff
+after that it actually updates that only component which is reconilation
+
+# The box-sizing property allows us to include the padding and border in an element's total width and height
 
 Reac-Native
 
