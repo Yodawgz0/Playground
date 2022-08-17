@@ -4,6 +4,7 @@ import React from "react";
 // import { ThemeProvider } from "./ThemeContext";
 //import TryingComponent from "./tryingComponent";
 //import ReduxTry from "./components/reduxTry";
+import HeadingHOC from "./components/headingHOC";
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
         <FunctionContextComponent />
       </ThemeProvider> */}
       {/* <TryingComponent /> */}={/* <ReduxTry /> */}
+      <HeadingHOC style={{ backgroundColor: "red" }} />
     </>
   );
 }

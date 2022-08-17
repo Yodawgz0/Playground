@@ -83,3 +83,38 @@ myCalculator(5, 5, myDisplayer);
   }, []);
 
   ####################
+  for(var i = 0 ; i<10; i++){
+    setTimeout(function(){
+        console.log(i)
+    },1000)
+    
+    var x = 14
+}
+
+  ####################
+  function product(a){
+    return( function product(b){
+        return a*b
+    })
+}
+
+let c = product(4)(3)
+console.log(c)
+####################
+
+useEffect(()={
+//mount
+,[]})
+useEffect(()={
+//update
+,[something]})
+useEffect(()={
+return()=>{}
+,[]})
+###################
+
+ const focusPoint = useRef(null);
+  const onClickHandler = () => {
+    focusPoint.current.value =
+      "The quick brown fox jumps over the lazy dog";
+      focusPoint.current.focus();
