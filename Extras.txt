@@ -13,6 +13,7 @@
   const numArr = [1, 2, 3];
 
   const res2 = numArr.forEach((val, i, arr) => {arr[i] = val * 2});
+  
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   const person = {
     name: "A",
@@ -111,10 +112,21 @@ useEffect(()={
 useEffect(()={
 return()=>{}
 ,[]})
-###################
+
 
  const focusPoint = useRef(null);
   const onClickHandler = () => {
     focusPoint.current.value =
       "The quick brown fox jumps over the lazy dog";
       focusPoint.current.focus();
+###################
+
+
+      function counting(arr){
+    for(let g of  [...new Set(arr)]){
+        let countofEach = arr.filter(x => x==g)
+        console.log(countofEach.length)
+    }
+}
+let arr = [1,2,3,4,1,4,5,3,3] 
+counting(arr)

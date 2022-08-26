@@ -85,9 +85,28 @@ after that it actually updates that only component which is reconilation -->
 > addtocarthandler: data => dispatch(addtocart(data))
 > }
 > connect(mapStatetoProps,mapDisptachtoProps)(todolist)
+> The useDispatch and useSelector hooks are alternatives to mapDispatchToProps and mapStateToProps, respectively. The useDispatch hook is used to dispatch an action while useSelector hook is used to get the state from the redux store.
 
 <!-- maintain code quality we have to
 less code, styles different page , make imports better and efficiant -->
+
+<!-- eventBubbling -- addEventListener after Query Selector uske baad wo console hota hai uske parent div ya body html , wo bubble ke tarah bada hota h
+stopPropogation --  ye jo event hai na wo agey nai janey dena hai parent tak
+stopimmediat bhi wohi chiz hai just ki uske phele mein hum allow kar saqte hai ek mein kisi mein rokna hai toh bana h
+prevent default uss chiz jaise anchor tag.. button tag ye sab ka behaviour jo default hai wo rok dega -->
+
+<!-- Semantic HTML refers to syntax that makes the HTML more comprehensible by better defining the different sections and layout of web pages. It makes web pages more informative and adaptable, allowing browsers and search engines to better interpret content. -->
+
+<!-- What is the difference between display:none and visibility:hidden ?
+display: none removes the element completely from the document. It does not take up any space, even though the HTML for it is still in the source code
+ visibility:hidden will hide the element but maintains the space it previously occupied  the tag is not visible-->
+
+<!-- Psuedo Elements : ::after ::before , uske agal bagal le ayga kuch kuch elements jiske liye warna HTML likhna padd jata
+toh yeh sirf wohi elements par kaam karega jisme content hai , input self closing hai toh nai karta h
+Example Name ke agey content="\*" lage dena , tooltip and all after :hover::after
+Psuedo classes are hover, active, disabled,  first-child, nth-child, etc. whereas psuedo elements in css are ::before, ::after, etc.
+
+attr is also same thing that we can get the prop from the element and get it into the css -->
 
 # The box-sizing property allows us to include the padding and border in an element's total width and height
 
